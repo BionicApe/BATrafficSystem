@@ -26,6 +26,7 @@ public class BATrafficSystem : ModuleRules
 			new string[]
 			{
 				"Core",
+				"ChaosVehicles"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
