@@ -116,9 +116,6 @@ public:
 	//END: Extracted from BP Code (not variables)
 
 	//Events
-	UPROPERTY(Category="Traffic|Events", BlueprintNativeEvent)
-	void ParkedCarTimer();
-	virtual void ParkedCarTimer_Implementation();
 
 
 public:
@@ -142,5 +139,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Traffic")
 	bool VisibilityCheckParkedVehicle(int32 Iterations);
+
+	UFUNCTION(Category="Traffic|Events", BlueprintNativeEvent)
+	void ParkedCarTimer();
+	virtual void ParkedCarTimer_Implementation();
 
 };
